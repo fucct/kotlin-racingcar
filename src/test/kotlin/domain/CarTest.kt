@@ -5,7 +5,7 @@ import io.kotest.matchers.shouldBe
 import io.kotest.matchers.types.shouldBeTypeOf
 import org.junit.jupiter.api.Assertions.*
 
-internal class CarTest : BehaviorSpec({
+class CarTest : BehaviorSpec({
     given("Car를 생성할 떄"){
         `when`("정상적인 이름을 입력 시"){
             then("정상적으로 Car를 생성한다"){

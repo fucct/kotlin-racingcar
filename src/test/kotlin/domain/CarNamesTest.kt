@@ -4,7 +4,7 @@ import io.kotest.core.spec.style.BehaviorSpec
 import io.kotest.matchers.collections.shouldContainAll
 import io.kotest.matchers.types.shouldBeTypeOf
 
-internal class CarNamesTest: BehaviorSpec({
+class CarNamesTest: BehaviorSpec({
     given("CarNames를 생성할 때"){
         `when`("2~5글자 이름을 가변인자로 입력 하면"){
             val carNames = CarNames("pobi", "crong", "honux")

@@ -7,7 +7,7 @@ import io.kotest.matchers.shouldBe
 import io.kotest.matchers.string.startWith
 import io.kotest.matchers.types.shouldBeTypeOf
 
-internal class CarNameTest : BehaviorSpec({
+class CarNameTest : BehaviorSpec({
     given("CarName 생성 시"){
         `when`("2~5글자의 CarName을 입력하면"){
             then("정상적으로 CarName을 생성한다"){

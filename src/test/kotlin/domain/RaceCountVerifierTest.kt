@@ -7,7 +7,7 @@ import io.kotest.matchers.shouldBe
 import io.kotest.matchers.string.startWith
 import io.kotest.matchers.types.shouldBeTypeOf
 
-internal class RaceCountVerifierTest : BehaviorSpec({
+class RaceCountVerifierTest : BehaviorSpec({
     given("Race Count를 검증하는 상황에서"){
         val raceCountVerifier = DefaultRaceCountVerifier()
         `when`("사용자가 1 이상을 입력하면"){
