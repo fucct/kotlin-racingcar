@@ -1,5 +1,4 @@
 package dto
 
-class GameResult {
-
+class GameResult(val snapShot: MutableList<CarsDto>, val winners: CarsDto) {
 }
