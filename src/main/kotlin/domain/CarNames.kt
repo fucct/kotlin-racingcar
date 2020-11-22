@@ -1,13 +1,9 @@
 package domain
 
-import org.w3c.dom.NameList
+class CarNames (vararg names: String) {
+    val carNames: List<CarName> = names.map(::CarName)
 
-class CarNames public constructor(vararg names: String) {
-    var carNames: List<CarName> = names.map(::CarName)
-
-    constructor(nameList: List<String>) : this() {
-        carNames = nameList.map(::CarName)
-    }
+    constructor(nameList: List<String>) : this(*nameList.toTypedArray())
 
     override fun equals(other: Any?): Boolean {
         return if (other is CarNames) {
