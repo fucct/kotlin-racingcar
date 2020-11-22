@@ -1,6 +1,10 @@
 package domain
 
-class Car(val name: CarName, val position: Int = 0) {
+class Car(val name: CarName, var position: Int = 0) {
+    fun move(engine: Engine, randomGenerator: RandomGenerator) {
+        this.position += engine.accelerate(randomGenerator)
+    }
+
     override fun equals(other: Any?): Boolean {
         if (other !is Car) {
             return false
