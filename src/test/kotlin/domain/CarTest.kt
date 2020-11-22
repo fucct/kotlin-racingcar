@@ -11,7 +11,7 @@ class CarTest : BehaviorSpec({
             then("정상적으로 Car를 생성한다"){
                 val car = Car(CarName("DD"))
                 car.shouldBeTypeOf<Car>()
-                car.name shouldBe "DD"
+                car.name.name shouldBe "DD"
                 car.position shouldBe 0
             }
         }

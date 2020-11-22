@@ -14,6 +14,6 @@ class CommaCarNamesVerifier : CarNamesVerifier {
             throw IllegalArgumentException("Car Name은 중복될 수 없습니다.")
         }
 
-        return CarNames(splitCarNames)
+        return CarNames(splitCarNames.map { CarName(it) })
     }
 }
